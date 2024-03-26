@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+🚀 React 카운터 애플리케이션 
+이 프로젝트는 React를 사용하여 구현된 간단한 카운터 애플리케이션입니다. 사용자는 숫자를 증가시키거나 감소시킬 수 있으며, 언제든지 숫자를 0으로 리셋할 수 있습니다. 숫자 조절을 위한 입력 필드도 제공됩니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🛠️ 기능 
+카운트 증가 + 버튼: 사용자가 클릭할 때마다 숫자를 증가시킵니다.
+카운트 감소 - 버튼: 사용자가 클릭할 때마다 숫자를 감소시킵니다.
+카운트 리셋 0 버튼: 카운트를 0으로 리셋합니다.
+동적 숫자 조절: 사용자가 입력 필드에 숫자를 입력하여 카운트 증가/감소의 단위를 조절할 수 있습니다.
+🔍 구현 세부 사항 
+상태 관리
+useState를 사용하여 사용자 입력에 대한 숫자를 관리합니다. 초기값은 1입니다.
+useReducer를 사용하여 카운트 상태를 관리합니다. 이는 애플리케이션의 상태 변화 로직을 한 곳에 집중시키고자 할 때 유용합니다.
+액션 핸들링
+UP 액션: 숫자를 증가시키는 로직을 포함합니다.
+DOWN 액션: 숫자를 감소시키는 로직을 포함합니다.
+RESET 액션: 숫자를 0으로 초기화하는 로직을 포함합니다.
+사용자 인터페이스
+각 기능에 해당하는 버튼과 숫자를 조절할 수 있는 입력 필드를 제공합니다.
+현재 카운트 값을 화면에 표시합니다.
